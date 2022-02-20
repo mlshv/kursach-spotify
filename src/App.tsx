@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 
 const currentHost = window.location.origin;
 
+console.log("Updated");
+
 const getToken = (code: string) => {
   return fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
